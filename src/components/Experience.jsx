@@ -21,9 +21,9 @@ const ExperienceCard = ({ experience }) => {
             borderRight: '7px solid #232631'
          }}
          date={experience.date}
-         iconStyle={{
+         /* iconStyle={{
             background: 
-         }}
+         }} */
       >
          {experience.date}
       </VerticalTimelineElement>
