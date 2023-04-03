@@ -5,6 +5,8 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
+import { FaTelegram, FaGithub, FaVk, FaInstagram } from 'react-icons/fa';
+
 const Navbar = () => {
    const [active, setActive] = useState('');
    const [toggle, setToggle] = useState(false);
@@ -27,6 +29,7 @@ const Navbar = () => {
                   Алексей Соловьев | Frontend Developer
                </p> */}
             </Link>
+
             <ul className='list-none hidden sm:flex flex-row gap-10'>
                {navLinks.map((link) => (
                   <li
@@ -36,10 +39,51 @@ const Navbar = () => {
                      } hover:text-white text-[18px] font-medium cursor-pointer`}
                      onClick={() => setActive(link.title)}
                   >
-                     <a href={`#${link.id}`}>{link.title}</a>
+                     <a
+                        href={`#${link.id}`}
+                        className='transition-all duration-300'
+                     >
+                        {link.title}
+                     </a>
                   </li>
                ))}
             </ul>
+
+            <div className='hidden sm:flex flex-row space-x-6'>
+               <a
+                  className='text-purple hover:text-white text-2xl transition-all duration-300'
+                  onClick={() =>
+                     window.open('https://github.com/Alextxnk/', '_blank')
+                  }
+               >
+                  <FaGithub />
+               </a>
+               <a
+                  className='text-purple hover:text-white text-2xl transition-all duration-300'
+                  onClick={() =>
+                     window.open(
+                        'https://www.instagram.com/alextxnk/',
+                        '_blank'
+                     )
+                  }
+               >
+                  <FaInstagram />
+               </a>
+               <a
+                  className='text-purple hover:text-white text-2xl transition-all duration-300'
+                  onClick={() =>
+                     window.open('https://vk.com/alextxnk', '_blank')
+                  }
+               >
+                  <FaVk />
+               </a>
+               <a
+                  className='text-purple hover:text-white text-2xl transition-all duration-300'
+                  onClick={() => window.open('https://t.me/alextxnk', '_blank')}
+               >
+                  <FaTelegram />
+               </a>
+            </div>
 
             <div className='sm:hidden flex flex-1 justify-end items-center'>
                <img

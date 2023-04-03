@@ -67,7 +67,7 @@ const ProjectCard = ({
 
                <div className='mt-5'>
                   <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-                  <p className='mt-2 text-secondary text-[14px]'>
+                  <p className='mt-2 text-secondary text-[14px] text-justify'>
                      {description}
                   </p>
                </div>
@@ -89,20 +89,20 @@ const Works = () => {
    return (
       <>
          <motion.div variants={textVariant}>
-            <p className={styles.sectionSubText}>My work</p>
-            <h2 className={styles.sectionHeadText}>Projects.</h2>
+            <p className={styles.sectionSubText}>Мои работы</p>
+            <h2 className={styles.sectionHeadText}>Проекты</h2>
          </motion.div>
 
          <div className='w-full flex'>
             <motion.p
                variants={fadeIn('', '', 0.1, 1)}
-               className='text-secondary text-[17px] max-w-3xl leading-[30px]'
+               className='text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
             >
-               Following projects showcases my skills and experience through
-               real-world examples of my work. Each project is briefly described
-               with links to code repositories and live demos in it. It reflects
-               my ability to solve complex problems, work with different
-               technologies, and manage projects effectively.
+               Следующие проекты демонстрируют мои навыки и опыт благодаря
+               реальным примерам моей работы. Каждый проект кратко описан со
+               ссылками на репозитории кода и живыми демо-версиями в нем. Это
+               отражает мою способность решать сложные проблемы, работать с
+               различными технологиями и эффективно управлять проектами.
             </motion.p>
          </div>
 
@@ -119,4 +119,4 @@ const Works = () => {
    );
 };
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, 'works');

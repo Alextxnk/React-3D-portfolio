@@ -70,8 +70,8 @@ const Contact = () => {
             variants={slideIn('left', 'tween', 0.2, 1)}
             className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
          >
-            <p className={styles.sectionSubText}>Get in touch</p>
-            <h3 className={styles.sectionHeadText}>Contact.</h3>
+            <p className={styles.sectionSubText}>Остались вопросы?</p>
+            <h3 className={styles.sectionHeadText}>Связаться</h3>
 
             <form
                ref={formRef}
@@ -79,39 +79,39 @@ const Contact = () => {
                className='mt-12 flex flex-col gap-8'
             >
                <label className='flex flex-col'>
-                  <span className='text-white font-medium mb-4'>Your Name</span>
+                  <span className='text-white font-medium mb-4'>Имя</span>
                   <input
                      type='text'
                      name='name'
                      value={form.name}
                      onChange={handleChange}
-                     placeholder='What is your name?'
+                     placeholder='Введите имя'
                      className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
                   />
                </label>
                <label className='flex flex-col'>
                   <span className='text-white font-medium mb-4'>
-                     Your Email
+                     Электронная почта
                   </span>
                   <input
                      type='email'
                      name='email'
                      value={form.email}
                      onChange={handleChange}
-                     placeholder='What is your email?'
+                     placeholder='Введите электронную почту'
                      className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
                   />
                </label>
                <label className='flex flex-col'>
                   <span className='text-white font-medium mb-4'>
-                     Your Message
+                     Сообщение
                   </span>
                   <textarea
                      rows='7'
                      name='message'
                      value={form.message}
                      onChange={handleChange}
-                     placeholder='What do you want to say?'
+                     placeholder='Введите сообщение'
                      className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'
                   />
                </label>
@@ -120,7 +120,7 @@ const Contact = () => {
                   type='submit'
                   className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
                >
-                  {loading ? 'Sending...' : 'Send'}
+                  {loading ? 'Отправляется...' : 'Отправить'}
                </button>
             </form>
          </motion.div>

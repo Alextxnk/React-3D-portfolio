@@ -41,20 +41,20 @@ const About = () => {
    return (
       <>
          <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>Intoduction</p>
-            <h2 className={styles.sectionHeadText}>Overview.</h2>
+            <p className={styles.sectionSubText}>Вступление</p>
+            <h2 className={styles.sectionHeadText}>Обо мне</h2>
          </motion.div>
 
          <motion.p
             variants={fadeIn('', '', 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
          >
-            I'm a skilled software developer with experience in TypeScript and
-            JavaScript, and expertise in frameworks like React, Node.js, and
-            Three.js. I'm a quick learner and collaborate closely with clients
-            to create efficient, scalable, and user-friendly solutions that
-            solve real-world problems. Let's work together to bring your ideas
-            to life!
+            Я опытный разработчик программного обеспечения с опытом работы в
+            JavaScript и TypeScript, а также с такими фреймворками, как React,
+            Next.js Node.js , и Three.js . Я быстро учусь и тесно сотрудничаю с
+            клиентами, создавая эффективные, масштабируемые и удобные для
+            пользователя решения, которые решают реальные проблемы. Давайте
+            работать вместе, чтобы воплотить ваши идеи в жизнь!
          </motion.p>
 
          <div className='mt-20 flex flex-wrap gap-10'>
