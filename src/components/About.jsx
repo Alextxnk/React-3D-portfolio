@@ -47,7 +47,7 @@ const About = () => {
 
          <motion.p
             variants={fadeIn('', '', 0.1, 1)}
-            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
          >
             Я опытный разработчик программного обеспечения с опытом работы в
             JavaScript и TypeScript, а также с такими фреймворками, как React,
