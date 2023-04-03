@@ -20,6 +20,7 @@ import {
    tesla,
    shopify,
    carrent,
+   portfolio,
    jobit,
    tripguide,
    threejs
@@ -206,7 +207,7 @@ const testimonials = [
 
 const projects = [
    {
-      name: 'Car Rent',
+      name: 'Portfolio',
       description:
          'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
       tags: [
@@ -223,7 +224,7 @@ const projects = [
             color: 'pink-text-gradient'
          }
       ],
-      image: carrent,
+      image: portfolio,
       source_code_link: 'https://github.com/Alextxnk/React-3D-portfolio',
       deploy_project_link: 'https://alextxnk.netlify.app/'
    },
