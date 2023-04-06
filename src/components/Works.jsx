@@ -9,6 +9,8 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+import { SiNetlify, SiGithub } from 'react-icons/si';
+
 const ProjectCard = ({
    index,
    name,
@@ -42,25 +44,27 @@ const ProjectCard = ({
                   <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                      <div
                         onClick={() => window.open(source_code_link, '_blank')}
-                        className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'
+                        className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer mr-2'
                      >
-                        <img
+                        {/* <img
                            src={github}
                            alt='github'
                            className='w-3/4 h-3/4 object-contain'
-                        />
+                        /> */}
+                        <SiGithub className='w-4/6 h-4/6 object-contain text-white hover:text-purple transition-all duration-300' />
                      </div>
                      <div
                         onClick={() =>
                            window.open(deploy_project_link, '_blank')
                         }
-                        className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                        className='black-gradient w-12 h-12 rounded-full flex justify-center items-center cursor-pointer'
                      >
-                        <img
+                        {/* <img
                            src={netlify}
                            alt='netlify'
                            className='w-3/4 h-3/4 object-contain'
-                        />
+                        /> */}
+                        <SiNetlify className='w-4/6 h-4/6 object-contain text-green hover:text-purple transition-all duration-300' />
                      </div>
                   </div>
                </div>
