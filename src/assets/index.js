@@ -10,6 +10,7 @@ import netlify from './netlify.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
+import nextjs from './tech/nextjs.png';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -45,6 +46,7 @@ export {
    menu,
    close,
    css,
+   nextjs,
    docker,
    figma,
    git,

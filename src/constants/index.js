@@ -23,7 +23,8 @@ import {
    portfolio,
    jobit,
    tripguide,
-   threejs
+   threejs,
+   nextjs
 } from '../assets';
 
 export const navLinks = [
@@ -94,6 +95,10 @@ const technologies = [
       icon: redux
    },
    {
+      name: 'Next JS',
+      icon: nextjs
+   },
+   {
       name: 'Tailwind CSS',
       icon: tailwind
    },
@@ -116,11 +121,11 @@ const technologies = [
    {
       name: 'figma',
       icon: figma
-   },
-   {
+   }
+   /* {
       name: 'docker',
       icon: docker
-   }
+   } */
 ];
 
 const experiences = [
@@ -207,7 +212,7 @@ const testimonials = [
 
 const projects = [
    {
-      name: 'Portfolio',
+      name: 'Car Rent',
       description:
          'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
       tags: [
@@ -224,9 +229,9 @@ const projects = [
             color: 'pink-text-gradient'
          }
       ],
-      image: portfolio,
-      source_code_link: 'https://github.com/Alextxnk/React-3D-portfolio',
-      deploy_project_link: 'https://alextxnk.netlify.app/'
+      image: carrent,
+      source_code_link: '',
+      deploy_project_link: ''
    },
    {
       name: 'Job IT',
@@ -247,8 +252,8 @@ const projects = [
          }
       ],
       image: jobit,
-      source_code_link: 'https://github.com/Alextxnk/React-3D-portfolio',
-      deploy_project_link: 'https://alextxnk.netlify.app/'
+      source_code_link: '',
+      deploy_project_link: ''
    },
    {
       name: 'Trip Guide',
@@ -269,8 +274,8 @@ const projects = [
          }
       ],
       image: tripguide,
-      source_code_link: 'https://github.com/Alextxnk/React-3D-portfolio',
-      deploy_project_link: 'https://alextxnk.netlify.app/'
+      source_code_link: '',
+      deploy_project_link: ''
    }
 ];
 

@@ -30,7 +30,7 @@ const Navbar = () => {
                </p> */}
             </Link>
 
-            <ul className='list-none hidden sm:flex flex-row gap-10'>
+            <ul className='list-none hidden md:flex flex-row gap-10'>
                {navLinks.map((link) => (
                   <li
                      key={link.id}
@@ -49,7 +49,7 @@ const Navbar = () => {
                ))}
             </ul>
 
-            <div className='hidden sm:flex flex-row space-x-6'>
+            <div className='hidden  lg:flex flex-row space-x-6'>
                <a
                   className='text-purple hover:text-white text-2xl transition-all duration-300'
                   onClick={() =>
@@ -85,7 +85,7 @@ const Navbar = () => {
                </a>
             </div>
 
-            <div className='sm:hidden flex flex-1 justify-end items-center'>
+            <div className='md:hidden flex flex-1 justify-end items-center'>
                <img
                   src={toggle ? close : menu}
                   alt='menu'
@@ -96,7 +96,7 @@ const Navbar = () => {
                <div
                   className={`${
                      !toggle ? 'hidden' : 'flex'
-                  } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+                  } p-6 violet-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
                >
                   <ul className='list-none flex justify-end items-start flex-col gap-4'>
                      {navLinks.map((link) => (

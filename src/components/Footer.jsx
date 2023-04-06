@@ -11,7 +11,7 @@ const Footer = () => {
    return (
       <footer className='bg-black-100 py-9'>
          <div className='container mx-auto max-w-5xl'>
-            <div className='flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between'>
+            <div className='flex flex-col xl:flex-row space-y-6 xl:space-y-0 items-center justify-between'>
                <div className='flex space-x-6 items-center justify-center'>
                   <a
                      className='text-purple hover:text-white text-3xl transition-all duration-300'
