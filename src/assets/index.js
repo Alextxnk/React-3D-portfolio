@@ -34,6 +34,9 @@ import portfolio from './portfolio.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import student_dashboard from './student_dashboard.png';
+import fast_company from './fast_company.png';
+import trello_clone from './trello_clone.png';
 
 export {
    logo,
@@ -66,5 +69,8 @@ export {
    portfolio,
    carrent,
    jobit,
-   tripguide
+   tripguide,
+   student_dashboard,
+   trello_clone,
+   fast_company
 };

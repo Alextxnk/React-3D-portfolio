@@ -41,7 +41,7 @@ const About = () => {
    return (
       <>
          <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>Вступление</p>
+            {/* <p className={styles.sectionSubText}>Вступление</p> */}
             <h2 className={styles.sectionHeadText}>Обо мне</h2>
          </motion.div>
 
@@ -49,15 +49,14 @@ const About = () => {
             variants={fadeIn('', '', 0.1, 1)}
             className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
          >
-            Я опытный разработчик программного обеспечения с опытом работы в
-            JavaScript и TypeScript, а также с такими фреймворками, как React,
-            Next.js Node.js , и Three.js . Я быстро учусь и тесно сотрудничаю с
-            клиентами, создавая эффективные, масштабируемые и удобные для
-            пользователя решения, которые решают реальные проблемы. Давайте
-            работать вместе, чтобы воплотить ваши идеи в жизнь!
+            Я разработчик программного обеспечения с опытом работы в JavaScript
+            и TypeScript, а также с такими фреймворками, как React, Next.js,
+            Node.js и Three.js . Я создаю эффективные, масштабируемые и удобные
+            для пользователя решения. Давайте работать вместе, чтобы воплотить
+            ваши идеи в жизнь!
          </motion.p>
 
-         <div className='mt-20 flex flex-wrap gap-10'>
+         <div className='mt-20 flex flex-wrap gap-10 mx-auto'>
             {services.map((service, index) => (
                <ServiceCard key={service.title} index={index} {...service} />
             ))}

@@ -23,6 +23,9 @@ import {
    portfolio,
    jobit,
    tripguide,
+   student_dashboard,
+   fast_company,
+   trello_clone,
    threejs,
    nextjs
 } from '../assets';
@@ -212,6 +215,72 @@ const testimonials = [
 
 const projects = [
    {
+      name: `Student's Dashboard`,
+      description:
+         'Веб-приложение для взаимодействия и обмена информацией между студентами и преподавателями. Пользователи могут авторизоваться с помощью Электронной почты или GitHub. В приложении есть возможность добавления статей в блог в формате Markdown, чат между пользователями. Данное приложение находится в разработке',
+      tags: [
+         {
+            name: 'next',
+            color: 'blue-text-gradient'
+         },
+         {
+            name: 'prisma',
+            color: 'green-text-gradient'
+         },
+         {
+            name: 'tailwind',
+            color: 'pink-text-gradient'
+         }
+      ],
+      image: student_dashboard,
+      source_code_link: 'https://github.com/Alextxnk/React-app-blog',
+      deploy_project_link: 'https://alextxnk-blog.netlify.app'
+   },
+   {
+      name: 'Fast Company',
+      description:
+         'Веб-приложение для поиска новой комании собеседников. Авторизация происходит с помощью Электронной почты. В приложении пользователи могут найти собеседника по характеристикам, посмотреть его профиль, оставить комментарий. Данное приложение находится в разработке',
+      tags: [
+         {
+            name: 'react',
+            color: 'blue-text-gradient'
+         },
+         {
+            name: 'mongodb',
+            color: 'green-text-gradient'
+         },
+         {
+            name: 'bootstrap',
+            color: 'pink-text-gradient'
+         }
+      ],
+      image: fast_company,
+      source_code_link: 'https://github.com/Alextxnk/React-app-blog',
+      deploy_project_link: 'https://alextxnk-blog.netlify.app'
+   },
+   {
+      name: 'Trello Clone',
+      description:
+         'Веб-приложение на основе Kanban-доски. Авторизация происходит с помощью Электронной почты. В приложении пользователи могут создавать новые доски, добавлять на них цвет фона или фоновое изображение. Внутри досок пользователи могут создавать карточки и стикеры задач',
+      tags: [
+         {
+            name: 'nuxt',
+            color: 'blue-text-gradient'
+         },
+         {
+            name: 'firebase',
+            color: 'green-text-gradient'
+         },
+         {
+            name: 'scss',
+            color: 'pink-text-gradient'
+         }
+      ],
+      image: trello_clone,
+      source_code_link: 'https://github.com/Alextxnk/Trello_clone',
+      deploy_project_link: 'https://alextxnk-trello.netlify.app/'
+   }
+   /* {
       name: 'Car Rent',
       description:
          'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
@@ -276,7 +345,7 @@ const projects = [
       image: tripguide,
       source_code_link: '',
       deploy_project_link: ''
-   }
+   } */
 ];
 
 export { services, technologies, experiences, testimonials, projects };

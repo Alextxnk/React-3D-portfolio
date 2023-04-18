@@ -33,8 +33,8 @@ const ProjectCard = ({
             variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
             className='w-full green-pink-gradient p-[1px] rounded-2xl shadow-card'
          >
-            <div className='bg-tertiary p-5 rounded-2xl min-h-[280px]'>
-               <div className='relative w-full h-[230px]'>
+            <div className='bg-tertiary p-5 rounded-2xl min-h-[510px] relative'>
+               <div className=' w-full mt-8'>
                   <img
                      src={image}
                      alt={name}
@@ -71,7 +71,8 @@ const ProjectCard = ({
 
                <div className='mt-5'>
                   <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-                  <p className='mt-2 text-secondary text-[14px] text-justify'>
+                  <p className='mt-2 text-secondary text-[14px]'>
+                     {/* text-justify */}
                      {description}
                   </p>
                </div>
@@ -93,7 +94,7 @@ const Works = () => {
    return (
       <>
          <motion.div variants={textVariant}>
-            <p className={styles.sectionSubText}>Мои работы</p>
+            {/* <p className={styles.sectionSubText}>Мои работы</p> */}
             <h2 className={styles.sectionHeadText}>Проекты</h2>
          </motion.div>
 
@@ -102,11 +103,9 @@ const Works = () => {
                variants={fadeIn('', '', 0.1, 1)}
                className='text-secondary text-[17px] max-w-3xl leading-[30px]'
             >
-               Следующие проекты демонстрируют мои навыки и опыт благодаря
-               реальным примерам моей работы. Каждый проект кратко описан со
-               ссылками на репозитории кода и живыми демо-версиями в нем. Это
-               отражает мою способность решать сложные проблемы, работать с
-               различными технологиями и эффективно управлять проектами.
+               Следующие проекты демонстрируют мои навыки и опыт. Каждый проект
+               кратко описан со ссылками на репозитории кода и живыми
+               демо-версиями в нем
             </motion.p>
          </div>
 
