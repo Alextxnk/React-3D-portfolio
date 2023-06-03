@@ -255,8 +255,8 @@ const projects = [
          }
       ],
       image: fast_company,
-      source_code_link: 'https://github.com/Alextxnk/React-app-blog',
-      deploy_project_link: 'https://alextxnk-blog.netlify.app'
+      source_code_link: 'https://github.com/Alextxnk/React-app-fast-company',
+      deploy_project_link: 'https://alextxnk-fast-company.netlify.app/'
    },
    {
       name: 'Trello Clone',
