@@ -233,8 +233,8 @@ const projects = [
          }
       ],
       image: student_dashboard,
-      source_code_link: 'https://github.com/Alextxnk/React-app-blog',
-      deploy_project_link: 'https://alextxnk-blog.netlify.app'
+      source_code_link: 'https://github.com/Alextxnk/Next-chat-app/',
+      deploy_project_link: 'https://dashboard-alextxnk.vercel.app/'
    },
    {
       name: 'Fast Company',
@@ -255,7 +255,7 @@ const projects = [
          }
       ],
       image: fast_company,
-      source_code_link: 'https://github.com/Alextxnk/React-app-fast-company',
+      source_code_link: 'https://github.com/Alextxnk/React-app-fast-company/',
       deploy_project_link: 'https://alextxnk-fast-company.netlify.app/'
    },
    {
@@ -277,7 +277,7 @@ const projects = [
          }
       ],
       image: trello_clone,
-      source_code_link: 'https://github.com/Alextxnk/Trello_clone',
+      source_code_link: 'https://github.com/Alextxnk/Trello_clone/',
       deploy_project_link: 'https://alextxnk-trello.netlify.app/'
    }
    /* {

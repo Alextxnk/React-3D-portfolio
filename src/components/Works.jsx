@@ -9,7 +9,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
-import { SiNetlify, SiGithub } from 'react-icons/si';
+import { SiNetlify, SiGithub, SiVercel } from 'react-icons/si';
 
 const ProjectCard = ({
    index,
